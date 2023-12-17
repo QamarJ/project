@@ -1,0 +1,18 @@
+html
+{background-color: black;
+}
+body
+{background-color:rgb(34, 34, 90);
+color: white;
+text-align: center;
+border:solid  white 10px ;
+border-radius: 50px;
+
+}
+h2
+{color:green;}
+div
+{text-align:left;
+margin-left: 80px;
+font-style: inherit;
+}

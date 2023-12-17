@@ -1,0 +1,21 @@
+body{
+    width: 100%;
+    text-align: center;
+}
+a{
+    text-decoration:none;
+    display: inline;
+    padding: 20px; 
+    color: darkgreen;
+}
+header{
+    background-color:#D462FF;
+    padding: 20px;
+}
+div{
+    text-align:center;
+    margin-left: 80px;
+}
+body{
+    background-color: antiquewhite;
+}

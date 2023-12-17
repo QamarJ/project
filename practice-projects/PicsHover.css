@@ -1,0 +1,50 @@
+body{
+    font-family: 'poppins',sans-serif;
+    height: 100vh;
+    background-color: rgb(28, 27, 27);
+    width: 100px;
+    place-items: center;
+    display: grid;
+    text-align: center;
+}
+#gallery{
+    display: flex;
+}
+img{
+    background-size: cover;
+    margin-top:100px ;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow:2px 4px 8px black;
+    scale: 1;
+    transition: 1s all;
+    
+}
+.card {
+    position: relative;
+    padding: 5px;
+    margin: 20px;
+    left: 50px;
+}
+
+h2{
+    color: white;
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.cap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    
+}
+.cap {display:none;}
+.card:hover .cap{display:block;}

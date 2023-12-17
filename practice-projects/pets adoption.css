@@ -1,0 +1,33 @@
+#animals{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pet{
+    height: 790px;
+    width: 320px;
+    border: 3px solid black;
+    display: inline-block;
+    border-radius:30px;
+    padding: 10px;
+    margin:10px;
+}
+
+img{
+    width: 100%;
+    border-radius:30px 30px 0 0;
+}
+
+span{
+    color: rgb(2, 2, 244);
+}
+
+h2{
+    color: blueviolet;
+}
+
+@media (orientation:landscape)
+{div{
+    flex-wrap: wrap;
+}
+}

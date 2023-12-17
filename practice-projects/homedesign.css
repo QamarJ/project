@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background:rgba(0, 0, 0, 0.686);
+  color: #00f1d9;
+}
+header{
+  background: url(https://as1.ftcdn.net/v2/jpg/06/45/98/64/1000_F_645986412_ezpktnqCELX6sAnzoPInyTKKUyHkPEZN.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  background:transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 80;
+}
+.logo {
+  width: 120px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  transition: 0.3s;
+}
+.navbar ul li a:hover::after {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  position:absolute;
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://as1.ftcdn.net/v2/jpg/06/45/98/64/1000_F_645986412_ezpktnqCELX6sAnzoPInyTKKUyHkPEZN.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: translateY(-50%);
+  top: 60%;
+  text-align: center;
+  color: white;
+}
+.home-content h1 {
+  line-height: 30px;
+  margin-top: 80px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.home-content p {
+  font-weight: 100;
+  margin: 30px auto;
+  line-height: 50px;
+  font-size: 20px;
+}
+.btn {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid #04edd6;
+  color: #04edd6;
+  background: transparent;
+  overflow: hidden;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  border: none;
+  background: #04edd6;
+  color: #022c28;
+  width: 200px;
+}

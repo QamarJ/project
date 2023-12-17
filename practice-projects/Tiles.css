@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --primary-color: #2676ab;
+    --dark-color:#494949;
+    --darker-color:#00000066;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #d3d1d1;
+    overflow: hidden;
+    
+}
+.checkbox-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.checkbox-input{display:none;}
+
+.checkbox-tile{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.5rem;
+    border: 2.5px solid transparent;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 20px #0000003a,inset -5px -5px 20px #ffffff26;
+    transition: 0.25s ease;
+    cursor:pointer ;
+}
+.checkbox-group > * {
+    margin: 0.5rem;
+}
+.checkbox-icon ion-icon{
+    font-size: 2rem;
+}
+
+.checkbox-tile::before{
+    content: "";
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 3px solid var(--darker-color);
+    border-radius: 50%;
+    top: 0.25rem;
+    left:  00.25rem;
+    transition: 0.25s ease;
+    background-image: url(check.png);
+    background-size: 35px;
+    background-position: 50%;
+    transform: scale(0);
+}
+.checkbox-tile:hover::before{
+    transform: scale(1);
+}
+
+.checkbox-tile:hover {
+    border-color: var(--darker-color);
+}
+
+.checkbox-icon {
+    transition: 0.5s ease;
+    color: var(--dark-color);
+}
+
+.checkbox-label {
+    color: var(--dark-color);
+    transition: 0.4s ease;
+    font-weight: 500;
+}
+
+.checkbox-input:checked + .checkbox-tile {
+    border-color: var(--primary-color);
+} 
+  
+  .checkbox-input:checked + .checkbox-tile::before {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    transform: scale(1);
+} 
+  
+  .checkbox-input:checked + .checkbox-tile .checkbox-icon,
+  .checkbox-input:checked + .checkbox-tile .checkbox-label {
+    color: var(--primary-color);
+}
