@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    background-color: rgb(212, 212, 212);
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+/* html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-font);
+} */
+
+#header{
+  font-size: 1rem;
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-navbar);
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.15rem  solid #18394b;
+  flex-wrap: wrap;
+  background: rgb(212, 211, 211);
+}
+#header-img {
+  height: 2.75rem;
+  width: 22rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.navbar{
+  height: auto;
+  width: auto;
+  flex-wrap: wrap;
+  background: rgb(212, 211, 211);
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar{
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  font-size: 0.95rem;
+  margin-right: 1.95rem;
+  background-color: rgb(212, 211, 211);
+  justify-content: flex-end; 
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+#heading h1{
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  padding-top: 2rem;
+  padding: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem 0 0 0;
+  
+}
+
+.btns {
+  font-size: 0.7rem;
+  margin:0 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.email{
+  font-size: 1rem;
+  width: 18em;
+  padding: 0em 0.6em;
+  margin: 1em;
+  margin-top: 2em;
+  height: 3em;
+  border-radius: 30px;
+  background: white;
+  border: 0.12em solid #18394b;
+}
+.start{
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  height: 3em;
+  padding: 0em 2em;
+  margin: 1em;
+  margin-top: 2em;
+  font-weight: bold;
+  color: white;
+  background: #18394b;
+}
+.center-img img{
+  height: auto;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0;
+  background-size: auto;
+  max-width: 100%;
+}
+h1 {
+  font-family: "Fira Sans";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em;
+}
+
+#features {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.feature {
+  display: flex;
+  width: 80vw;
+  font-size: 0.8rem;
+  justify-content: flex-start;
+  
+}
+
+.feature .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+  color:#18394b;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+
+.feature .desc h2{
+  margin: 10px;
+}
+
+.feature i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  color:#18394b;
+  display: block;
+}
+#video img{
+   position:static;
+   margin-left: 20rem;
+   /* left: 5rem; */
+  justify-content: space-around;
+}
+#pricing {
+  font-size: 0.8rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding-bottom: 10em;
+  display: inline-block;
+  margin-left: 17px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  border: 0.1em solid #18394b;
+  text-align: center;
+  justify-content: stretch;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  margin: 3rem 3rem;
+  border-radius: 1em;
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-top: 5rem;
+}
+
+.product h2 {
+  padding: 1em;
+  color: var(--color-main);
+  font-size: 2em;
+}
+
+.product-title {
+  background: #18394b;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  height: 2em;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+
+}
+
+ol {
+  list-style: none;
+  padding: 1em;
+  font-size: 15px;
+}
+
+button {
+  border-radius: 25px;
+  width: 10em;
+  background: #18394b;
+  color: white;
+  height: 3em;
+  font-weight: bold;
+  border: none;
+  margin-top: 2rem;
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #18394b;
+  width: 100%;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  background: #18394b;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 50px;
+}
+
+span{
+  background: #18394b;
+  color: white;
+  padding: 50px;
+  
+}
